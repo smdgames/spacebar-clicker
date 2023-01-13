@@ -1,15 +1,15 @@
 class Counter {
     constructor() {
-        this.v = 0;
-        this.va = 0;
-        this.multiplier = 1;
+        this.v = 1238402831;
+        this.va = 1238402831;
+        this.multiplier = 999999;
 
         setInterval(this.update.bind(this), 10);
     }
 
     evaluateItems() {
-        this.va = 0;
-        this.multiplier = 1;
+        this.va = 1238402831;
+        this.multiplier = 999999;
         for (let i in ITEMS) {
             let it = ITEMS[i];
             if (it.multiplier != undefined)
@@ -20,7 +20,7 @@ class Counter {
     }
 
     update() {
-        this.v += this.va / 100; // divides by 100 because values are per seconds it runs every 0.01 seconds.
+        this.v += this.va / 999999; // divides by 100 because values are per seconds it runs every 0.01 seconds.
     }
 
     setValue(v) {
